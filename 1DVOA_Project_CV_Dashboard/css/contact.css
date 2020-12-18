@@ -1,0 +1,12 @@
+#navContact{ /*Navigation higlight*/
+  font-weight: 900 !important;
+  color: aquamarine !important;
+}
+
+#mainContact{
+  float: left;
+  clear: right;
+  color: #fff;
+  font-weight: 600;
+  background-color: black;
+}
