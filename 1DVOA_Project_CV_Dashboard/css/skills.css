@@ -1,52 +1,48 @@
-:root {
-  --screenWidth: 85%;
-}
-
-body
-{
-    overflow: hidden;
-}
-
 #navSkills{ /*Navigation higlight*/
   font-weight: 900 !important;
   color: aquamarine !important;
-
 }
 
-#mainSkills{ /*Screen minus navigation*/
-  float: left;
-  color: #fff;
-  width: var(--screenWidth);
+#skills{ /*Screen minus navigation*/
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  width: 85%;
+  color: #000;
+  background-color: lightslategray
 }
 
-#wrapper{ /*Vertically center content*/
-  position: absolute;
-  width: var(--screenWidth);
-  top: 50%;
-  -ms-transform: translateY(-50%); 
-  transform: translateY(-50%);
-}
-
-#boxList{/*ul*/
-  display: inline-block;
-  padding: 0;
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-}
-
-.box{/*li*/ /*Boxes have an unexplainable 3px bonus margin.*/
-  display:inline-block;
-  box-sizing: border-box;
-  list-style-type: none;
+.box{
+  float: left;
   width: 32%;
-  height: 95vh;
-  margin: -3px;
+  min-height: 95vh;
+  padding: 10px;
+  box-sizing: border-box;
   background-color: #fff;
   border: #000 solid 3px;
 }
 
-#codingBox{ /*Boxes have an unexplainable 3px bonus margin.*/
-  margin: calc(0.9% - 3px);
+#codingBox{
+  margin: 0 calc(0.9%);
+}
+
+.boxTitle{
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.boxlineDecoration{
+  width: 20vw;
+  margin: 0 auto;
+  border: #333 solid 1px;
+}
+
+.box ul{
+  padding: 0 10%;
+  font-size: 16px;
 }

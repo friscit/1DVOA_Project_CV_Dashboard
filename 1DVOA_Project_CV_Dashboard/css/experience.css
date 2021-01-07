@@ -4,10 +4,35 @@
 }
 
 #mainExperience{
-  float: left;
+  float: right;
   clear: right;
   color: #fff;
+  width: 85%;
+  height: 100vh;
   font-weight: 600;
-  background-color: black;
+  background-color: #333;
+}
+
+.experience{
+  width: 650px;
+  height: 400px; 
+  margin-right: 60px;
+  margin-top: 60px;
+  border: 7px solid #454545;
+  background-color: #fff;
+  float: left;
+  color: #333;
+  text-align: left;
+  padding: 10px;
+
+}
+
+#break{
+  clear: left;
+}
+
+#box{
+  display: table;
+  margin: 0 auto;
 }
 

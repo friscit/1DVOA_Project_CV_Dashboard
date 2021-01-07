@@ -1,12 +1,125 @@
+:root {
+  --hobbyBoxWidth: 220px;/*Edit @media value manually for Width & Margin.*/
+  --hobbyBoxHeight: 75px;
+  --hobbyBoxMargin: 15px;
+  --profileBackgroundColor: lightslategray;
+  --hobbiesBackgroundColor: lightslategray;
+}
+
 #navProfile{ /*Navigation higlight*/
   font-weight: 900 !important;
   color: aquamarine !important;
 }
 
-#mainProfile{
-  float: left;
-  clear: right;
-  color: #fff;
-  font-weight: 600;
-  background-color: green;
+#fullScreen{
+  float: right;
+  width: 85%;
+  height: 100vh;
+  color: #000;
 }
+
+#profile{
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+  min-height: 50%;
+  padding: 30px 20px;
+  border-bottom: 3px solid #333;
+  background-color: var(--profileBackgroundColor);
+}
+
+#profileContent{
+  background-color: #fff;
+  padding: 10px;
+  /*border: solid 3px #333;*/
+  box-shadow: 2px 2px 5px #000;
+}
+
+#profilePicture{
+  float: left;
+  max-width: 30%;
+  height: 30%;
+  max-height: 250px;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+}
+
+#profileRegularText{
+  margin: 0;
+  font-size: 14px;
+  max-width: 800px;
+}
+
+.title{
+  margin: 0 0 10px 0;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+#hobbies{
+  display: flex;
+  justify-content: center;/*horizontal*/
+  align-items: center;/*vertical*/
+  min-height: 50%;
+  padding: 30px 0px;
+  background-color: var(--hobbiesBackgroundColor);
+}
+
+#hobbiesTitle{
+  margin-left: var(--hobbyBoxMargin);
+}
+
+#hobbies ul{
+  max-width: calc((var(--hobbyBoxWidth) * 3) + (var(--hobbyBoxMargin) * 4));
+  margin: 0;
+  padding: var(--hobbyBoxMargin) 0 0 var(--hobbyBoxMargin);
+  text-align: center;
+}
+
+#hobbies ul li{
+  display: inline-block;
+  box-sizing: border-box;
+  width: var(--hobbyBoxWidth);
+  height: var(--hobbyBoxHeight);
+  margin: 0 var(--hobbyBoxMargin) var(--hobbyBoxMargin) 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px #000;
+  /*border: solid 3px #333;*/
+  list-style: none;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hobbyListItem{
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.itemPicture{
+  float: left;
+  height: 100%;
+}
+
+.hobbyListItem p{
+  float: left;
+  padding: 0 5px;
+  margin: 0;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: calc(15vw + 22px + (15px * 4) + (220px * 3))) {/*Edit number when changing boxWidth variable*/
+  #hobbiesTitle{
+    margin-left: calc(50% - (var(--hobbyBoxWidth) + 12.5px));
+  }
+}
+
+@media only screen and (max-width: calc(15vw + 22px + (15px * 4) + (220px * 2))) {/*Edit number when changing boxWidth variable*/
+  #hobbiesTitle{
+    margin-left: calc(50% - (var(--hobbyBoxWidth) / 2));
+  }
+}
+

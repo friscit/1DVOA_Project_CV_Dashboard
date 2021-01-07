@@ -1,15 +1,13 @@
 :root {
-  --verticalMargin: 20px;
+  --verticalMargin: 30px;
 }
 
 body {
   width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: Verdana;
-  background-color: #274F4F;
-  color: #BFBFBF;
-  min-height: 100%;
 }
 
 div{
@@ -18,7 +16,7 @@ div{
 
 /*    Start profile picture    */
 
-#profilePicture{
+#navigationPofilePicture{
   display: block;
   width: 80%;
   border-radius: 50%;
@@ -27,7 +25,8 @@ div{
 
 #nameText{
   text-align: center;
-  font-size: larger;
+  font-size: min(2vw, 1.5rem);
+  margin: 0 5px;
 }
 
 #lineDecoration{
@@ -41,26 +40,28 @@ div{
 /*    End profile picture   */
 /*    Start navigation    */
 
-#mainNavigation {
+#navigation {
+  position: fixed;
   float: left;
   height: 100vh;
   width: 15%;
+  color: #BFBFBF; 
   background-color: #454545;
   border-right: 3px solid #333;
 }
-#mainNavigation ul{
+#navigation ul{
   padding: 0;
   margin: 0;
   width: 100%;
 }
-#mainNavigation li{
+#navigation li{
   display:table;
   clear: left;
   margin: 0 auto 0 auto;
   width: 100%;
   list-style-type: none;
 }
-#mainNavigation a {
+#navigation a {
   display: block;
   padding: calc(var(--verticalMargin)/2) 0;
   color: #BFBFBF;
@@ -69,7 +70,7 @@ div{
   text-decoration: none;
 }
 
-#mainNavigation a:hover {
+#navigation a:hover {
   color: #fff;
   background-color: rgb(92, 92, 92);
 }

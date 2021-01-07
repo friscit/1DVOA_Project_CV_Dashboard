@@ -4,9 +4,28 @@
 }
 
 #mainContact{
-  float: left;
-  clear: right;
+  float: right;
   color: #fff;
+  width: 85%;
+  height: 100vh;
   font-weight: 600;
-  background-color: black;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  width: 900px;
+  height: 500px; 
+  border: 7px solid #454545;
+  background-color: #fff;
+  float: center;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-60% , -50%);
 }
