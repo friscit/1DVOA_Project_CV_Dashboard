@@ -23,9 +23,4 @@
   float: center;
   color: #333;
   text-align: center;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-60% , -50%);
 }

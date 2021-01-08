@@ -5,8 +5,9 @@ Jan Coomans:
     Navigatie
     Index (Home)
     Skills
+    Contact
 
 Luka Boonen:
     Education
     Experience
-    Contact
+
