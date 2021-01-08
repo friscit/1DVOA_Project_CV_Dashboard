@@ -2,13 +2,13 @@
   --hobbyBoxWidth: 220px;/*Edit @media value manually for Width & Margin.*/
   --hobbyBoxHeight: 75px;
   --hobbyBoxMargin: 15px;
-  --profileBackgroundColor: lightslategray;
-  --hobbiesBackgroundColor: lightslategray;
+  --profileBackgroundColor: #f1efe2;
+  --hobbiesBackgroundColor: #f1efe2;
 }
 
 #navProfile{ /*Navigation higlight*/
   font-weight: 900 !important;
-  color: aquamarine !important;
+  color: #ffcf88 !important;
 }
 
 #fullScreen{
@@ -29,10 +29,10 @@
 }
 
 #profileContent{
-  background-color: #fff;
+  background-color: #e9e8d0;
   padding: 10px;
-  /*border: solid 3px #333;*/
-  box-shadow: 2px 2px 5px #000;
+  border: solid 1px  #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 #profilePicture{
@@ -42,6 +42,8 @@
   max-height: 250px;
   border-radius: 50%;
   margin: 0 20px 0 0;
+  border: 2px #333 solid;
+  box-sizing: border-box;
 }
 
 #profileRegularText{
@@ -82,9 +84,9 @@
   width: var(--hobbyBoxWidth);
   height: var(--hobbyBoxHeight);
   margin: 0 var(--hobbyBoxMargin) var(--hobbyBoxMargin) 0;
-  background-color: white;
-  box-shadow: 2px 2px 5px #000;
-  /*border: solid 3px #333;*/
+  background-color: #e9e8d0;
+  border: solid 1px  #000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   list-style: none;
   text-align: left;
   overflow: hidden;
@@ -95,6 +97,7 @@
   float: left;
   display: flex;
   align-items: center;
+  padding: 5px 10px;
   height: 100%;
   width: 100%;
 }
@@ -106,8 +109,8 @@
 
 .hobbyListItem p{
   float: left;
-  padding: 0 5px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 0 15px;
   font-size: 18px;
 }
 

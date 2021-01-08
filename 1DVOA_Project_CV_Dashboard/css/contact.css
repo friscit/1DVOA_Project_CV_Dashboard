@@ -1,26 +1,81 @@
 #navContact{ /*Navigation higlight*/
   font-weight: 900 !important;
-  color: aquamarine !important;
+  color: #ffcf88 !important;
+}
+
+body{
+  background-color: #f1efe2;
 }
 
 #mainContact{
   float: right;
-  color: #fff;
   width: 85%;
   height: 100vh;
-  font-weight: 600;
-  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact{
-  width: 900px;
+#contact{
+  float: left;
+  width: 60vw;
+  max-width: 650px;
   height: 500px; 
-  border: 7px solid #454545;
+  color: #000;
   background-color: #fff;
-  float: center;
-  color: #333;
+  border: solid 7px  #333;
+  border-radius: 4px;
+}
+
+#title{
   text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+#decorationLine{
+  width: 60%;
+  margin: 0 auto;
+  border: #333 solid 1px;
+}
+
+#contact ul{
+  float: left;
+  margin: 30px 0 0 15%;
+  padding: 0;
+}
+
+#contact ul li{
+  display: flex;
+  align-items: center;/*vertical*/
+  height: 80px;
+  width: 100%;
+  margin: 0 0 10px 0;
+  list-style-type: none;
+}
+
+.imageBox{
+  float: left;
+  height: 100%;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #085951;
+}
+
+.itemImage{
+  float: left;
+  height: 100%;
+}
+
+#contact ul li p{
+  float: left;
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+  #contact ul{
+    margin-left: 10%;
+  }
 }

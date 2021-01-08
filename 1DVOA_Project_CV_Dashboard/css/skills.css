@@ -1,6 +1,6 @@
 #navSkills{ /*Navigation higlight*/
   font-weight: 900 !important;
-  color: aquamarine !important;
+  color: #ffcf88 !important;
 }
 
 #skills{ /*Screen minus navigation*/
@@ -11,7 +11,7 @@
   height: 100vh;
   width: 85%;
   color: #000;
-  background-color: lightslategray
+  background-color: #f1efe2;
 }
 
 .box{
@@ -20,8 +20,8 @@
   min-height: 95vh;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #fff;
-  border: #000 solid 3px;
+  background-color: #ffffff;
+  border: #333 solid 3px;
 }
 
 #codingBox{
@@ -45,4 +45,47 @@
 .box ul{
   padding: 0 10%;
   font-size: 16px;
+}
+
+.box li{
+  margin: 0 0 35px 0;
+}
+
+.progressBar{
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  background-color: lightslategray;
+  padding: 0;
+}
+
+.progress{
+  float: left;
+  height: 10px;
+  background-color: limegreen;
+}
+
+.box li p{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.ten{
+  width: 100%;
+}
+.nine{
+  width: 90%;
+}
+.eight{
+  width: 80%;
+}
+.seven{
+  width: 70%;
+}
+.six{
+  width: 60%;
+}
+.five{
+  width: 50%;
 }
